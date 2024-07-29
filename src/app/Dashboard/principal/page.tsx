@@ -3,6 +3,9 @@
 import React from 'react';
 import Cards from '../../../components/cards';
 import { ProgressCircle } from '@tremor/react';
+import { LineChartHero } from '@/components/LineChartHero';
+
+import { CardUsageExample } from '@/components/Cardv2'
 
 const App: React.FC = () => {
   return (    
@@ -13,6 +16,13 @@ const App: React.FC = () => {
           <div className="flex justify-center">
             <ProgressCircle value={72} size="lg" />
           </div>
+        </div>
+
+        <div>
+          <LineChartHero/>
+        </div>
+        <div>
+          <CardUsageExample/>
         </div>
 
     </div>
